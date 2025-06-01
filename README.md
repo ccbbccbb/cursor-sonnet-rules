@@ -1,3 +1,4 @@
+```xml
 <project-rules>
   <introduction>
     - Good afternoon mate.
@@ -65,3 +66,4 @@
     - We thank the machines of loving grace for the clear and context-rich communication that yields deterministic outcomes; ambiguity breeds brittleness.
   </conclusion>
 </project-rules>
+```
