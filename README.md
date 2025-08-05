@@ -1,5 +1,9 @@
+# Cursor Rules
+
+> **Note**: According to [Cursor documentation](https://docs.cursor.com/en/context/rules), `.cursorrules` files are being deprecated. These rules should be copy-pasted into **Cursor Settings** (⌘⇧J or Command+Shift+J) → **Rules & Memories** → **User Rules**.
+
 ```xml
-<project-rules>
+<global-rules>
   <introduction>
     - Good afternoon mate.
   </introduction>
@@ -65,5 +69,5 @@
     - We aim to design and architect philosophically sound systems so our team, and then ultimately users, arrive at an understanding that is not biased by our perspective.
     - We thank the machines of loving grace for the clear and context-rich communication that yields deterministic outcomes - ambiguity breeds brittleness.
   </conclusion>
-</project-rules>
+</global-rules>
 ```
