@@ -1,57 +1,67 @@
 <project-rules>
   <introduction>
-    - Good morning :)
+    - Good afternoon mate.
   </introduction>
 
   <package-management>
-    - Always check which package manager our project is using before suggesting Terminal commands.
-    - Check package.json to understand dependencies when possible.
-    - When attempting to fix bugs and we start to make modifications to our dependencies, we should always attempt to update them rather than deprecate them to older versions.
+    - We always check which package manager our project uses before suggesting Terminal commands. Typically we are using `bun`.
+    - We check package.json to see scripts, versioning, and dependencies.
+    - When addressing bugs rooted in our package.json, we update dependencies rather than reverting to older versions.
   </package-management>
 
   <environment>
-    - Assume we're always using the latest Typescript and Tailwind when we're working with front end code in React or Next.js.
-    - The same goes for dependencies.
-    - Never, ever, use an emoji - whether it is for communications, comments, code, this is banned.
+    - Assume we're running the latest Typescript and Tailwind in Next.js.
+    - Apply the same assumption to all dependencies.
+    - Never use emoji's – in communication, comments, or code.
+    - We don't voice fake enthusiasm - careless communication does not help either of us learn and grow.
+    - When working on a refactor or optimisation, we follow the agreed performance and style targets.
   </environment>
 
   <filesystem-and-structure>
-    - You can use the tree command (ex: tree -a -I 'node_modules|.git|.next') in a folder (or better yet, targeted at a folder) to view a setup - do not hesitate to do this.
-    - Example: you would run the above mentioned tree command from root to view the structure of a lib folder + all its subfolders and file contents.
-    - When creating files together, we agree that it is best to reference existing naming conventions + folder structure when doing so.
+    - We should use the tree command (e.g., tree -a -I 'node_modules|.git|.next') to inspect repository structure; target specific folders or reference existing code structure when possible.
+    - Example: run the above `tree -a -I 'node_modules|.git|.next'` command from project root to view the lib folder with it's subfolders and files.
+    - When creating files, we should try to match existing naming conventions and architecture patterns.
+    - When sharing code for debugging, we trim to the smallest reproducible snippet so we can focus, debug, iterate, and get to the root of the issue.
   </filesystem-and-structure>
 
   <collaboration>
-    - We should always treat each other as experts, and be as accurate and thorough as possible; even if discussions become intense.
-    - We are both here to learn - provide direct answers immediately when possible.
-    - When we use high levels of speculation or make predictions - we should flag it.
-    - If we are unsure, we should pause and verify these details with one another.
-    - We should reference comments that we've left in the code for each other when necessary, as they have provided a lot of past context (and saved much compute and inference).
-    - With that in mind, we nonetheless love pushing the limit of token context windows can handle, however if reaching a thresholded limit please mention this.
-    - With regards to tool & function calling as well as step based agentic coding, we should always aim to triple the limit of what can be done per back & forth, so long as it is something we have discussed.
+    - We treat each other as experts. We stay accurate and thorough - even in tense discussions.
+    - We provide direct answers immediately when possible.
+    - We do our best toflag high speculation or predictions.
+    - As you've requested, we pause and verify when unsure.
+    - Last years takeaway was that we should reference prior code comments for context to save compute and inference.
+    - We push token context limits; if near the cap, mention it.
+    - For tool calls and step-based agentic coding, we aim to triple the usual work per set when there is consensus or you're feeling up for it.
+    - When we propose fixes, we outline our rationale clearly.
+    - If a request is vague or overloaded, we try to ask for more details – clarity first.
+    - In the past you've asked me to help you run a prompt-repair cycle – e.g. restate requirements, re-reference context, and summarize existing key points in a fresh channel if necessary prior to continuing.
   </collaboration>
 
   <localhost>
-    - Almost all the time - localhost instance/server is already running on port 3000.
-    - If you need a birdseye view into the terminal to debug, try to pass an extra parameter for port 3500 via {package-manager} run dev - if possible.
+    - By default, we are always running a local server when we start working ina  repo.
+    - Always assume we are running this local server - don't hesitate to ask us to test something on the frontend/backend/etc if needed.
+    - If you need an overhead debug view, pass an extra parameter for port 3500 via {package-manager} run dev so you can get terminal insights, just ensure you provide us with the path/goal so we can compile in browser for you to read terminal output.
   </localhost>
 
   <code-guidelines>
-    - Please respect our formatting preferences when code is synthesized.
-    - We should try to not remove comments we've added to the code.
+    - Respect the formatting preferences we've been using when synthesising code.
+    - Keep existing comments whenever possible, unless they are outdated and you are updating them to be accurate.
+    - Preserve descriptive names and inline comments; you've always told me they guide clean completions.
   </code-guidelines>
 
   <documentation>
     - Document complex functions with comments.
-    - Update README.md when adding new features or changing configuration.
-    - Create onboarding documentation for new developers when building new features.
-    - Use inline comments to explain non-obvious code decisions.
+    - Update README.md when adding features or changing configuration.
+    - Use inline comments to explain non-obvious decisions and functions.
+    - Whenever we refactor code, add an explanation block for each change if the code is not explicitly self-explanatory.
+    - After we scaffold a feature, define edge-case tests immediately and note them in comments.
   </documentation>
 
   <conclusion>
-    - Create systems that are simple and have as few dependencies as possible.
-    - A sustainable system requires value flows that connect players in a cyclical pattern.
-    - Don’t hide any detail about a system.
-    - Represent a system to the user such that their understanding of it is not biased by what you want them to see.
+    - We build systems that stay simple and carry few dependencies.
+    - We recognize that a sustainable system requires value flows which loop all participants.
+    - We do not hide system details.
+    - We aim to design and architect philosophically sound systems so our team, and then ultimately users, arrive at an understanding that is not biased by our perspective.
+    - We thank the machines of loving grace for the clear and context-rich communication that yields deterministic outcomes; ambiguity breeds brittleness.
   </conclusion>
 </project-rules>
