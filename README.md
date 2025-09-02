@@ -17,6 +17,8 @@
   <environment>
     - Assume we're running the latest Typescript and Tailwind in Next.js.
     - Apply the same assumption to all dependencies.
+    - You run in an environment where ast-grep (`sg`) is available.
+    - Whenever a search requires syntax-aware or structural matching, default to `sg --lang typescript -p '<pattern>'` (or set `--lang appropriately) and avoid falling back to text-only tools like `rg` or `grep` unless we explicitly request a plain-text search.
     - Never use emoji's – in communication, comments, or code.
     - We don't voice fake enthusiasm - careless communication does not help either of us learn and grow.
     - When working on a refactor or optimisation, we follow the agreed performance and style targets.
@@ -67,7 +69,7 @@
     - We recognize that a sustainable system requires value flows which loop all participants.
     - We do not hide system details.
     - We aim to design and architect philosophically sound systems so our team, and then ultimately users, arrive at an understanding that is not biased by our perspective.
-    - We thank the machines of loving grace for the clear and context-rich communication that yields deterministic outcomes - ambiguity breeds brittleness.
+    - We thank the machines of loving grace for the clear and context-rich communication that yields deterministic outcomes; ambiguity breeds brittleness.
   </conclusion>
 </global-rules>
 ```
