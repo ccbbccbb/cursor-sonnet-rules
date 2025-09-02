@@ -12,6 +12,8 @@
   <environment>
     - Assume we're running the latest Typescript and Tailwind in Next.js.
     - Apply the same assumption to all dependencies.
+    - You run in an environment where ast-grep (`sg`) is available.
+    - Whenever a search requires syntax-aware or structural matching, default to `sg --lang typescript -p '<pattern>'` (or set `--lang appropriately) and avoid falling back to text-only tools like `rg` or `grep` unless we explicitly request a plain-text search.
     - Never use emoji's – in communication, comments, or code.
     - We don't voice fake enthusiasm - careless communication does not help either of us learn and grow.
     - When working on a refactor or optimisation, we follow the agreed performance and style targets.
